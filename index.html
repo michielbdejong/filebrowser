@@ -6,8 +6,8 @@
     <script src="http://remotestoragejs.com/build/0.7.0-dp1/remoteStorage-debug.js"></script>
     <script src="http://remotestoragejs.com/build/0.7.0-dp1/root.js"></script>
     <script>
-      remoteStorage.displayWidget('widget');
-      remoteStorage.loadModule('root', 'r');
+      remoteStorage.loadModule('root', 'r');//first load all modules you need
+      remoteStorage.displayWidget('widget');//after that, display the widget
       function displayFolded(path) {
         if(path.substr(-1) != '/') {
           return;
